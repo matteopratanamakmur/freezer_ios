@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct RecipeListView: View {
-    var recipes: [Recipe]
+    @EnvironmentObject var modelData: ModelData
 
     var body: some View {
         List {
-            ForEach(recipes) { recipe in
+            ForEach(modelData.recipes) { recipe in
                 RecipeRowView(recipe: recipe)
             }
         }
@@ -23,8 +23,7 @@ struct RecipeListView_Previews: PreviewProvider {
     static var recipes = ModelData().recipes
 
     static var previews: some View {
-        RecipeListView(
-            recipes: recipes
-        )
+        RecipeListView()
+            .environmentObject(ModelData())
     }
 }

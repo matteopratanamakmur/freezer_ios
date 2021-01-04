@@ -30,5 +30,6 @@ struct RecipeRowView_Previews: PreviewProvider {
         RecipeRowView(
             recipe: recipes[0]
         )
+        .previewLayout(.fixed(width: 300, height: 70))
     }
 }

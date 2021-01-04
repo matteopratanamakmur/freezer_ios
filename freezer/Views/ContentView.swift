@@ -11,27 +11,44 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
+    enum Tab {
+        case recipes
+        case foods
+    }
+    
+    @State private var selection: Tab = .recipes
+
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
 
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-            }
-            .onDelete(perform: deleteItems)
+        TabView(selection: $selection) {
+            RecipeListView().tabItem {
+                Text("Recipes")
+            }.tag(Tab.recipes)
+            FoodListView().tabItem {
+                Text("Foods")
+            }.tag(Tab.foods)
         }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
-        }
+//        VStack {
+//            List {
+//                ForEach(items) { item in
+//                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//                }
+//                .onDelete(perform: deleteItems)
+//            }
+//            .toolbar {
+//                #if os(iOS)
+//                EditButton()
+//                #endif
+//
+//                Button(action: addItem) {
+//                    Label("Add Item", systemImage: "plus")
+//                }
+//            }
+//        }
     }
 
     private func addItem() {
@@ -75,6 +92,8 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(ModelData())
     }
 }
