@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "curry_rice",
+        "imageName": "dummy",
+        "foodNums": "1,2,2"
+    },
+    {
+        "id": 2,
+        "name": "stew",
+        "imageName": "dummy",
+        "foodNums": "0,1,1"
+    }
+]

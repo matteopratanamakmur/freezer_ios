@@ -20,6 +20,10 @@
 		8010D1F925A2E2B5005ED4F5 /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = 8010D1F825A2E2B5005ED4F5 /* food.json */; };
 		8010D20125A2E3DE005ED4F5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D20025A2E3DE005ED4F5 /* ModelData.swift */; };
 		8010D20625A2F034005ED4F5 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D20525A2F034005ED4F5 /* FoodListView.swift */; };
+		8010D20B25A2F362005ED4F5 /* recipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 8010D20A25A2F362005ED4F5 /* recipe.json */; };
+		8010D21025A2F3A8005ED4F5 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D20F25A2F3A8005ED4F5 /* Recipe.swift */; };
+		8010D21525A2F5AA005ED4F5 /* RecipeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D21425A2F5AA005ED4F5 /* RecipeRowView.swift */; };
+		8010D21A25A2F6E6005ED4F5 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D21925A2F6E6005ED4F5 /* RecipeListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		8010D1F825A2E2B5005ED4F5 /* food.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
 		8010D20025A2E3DE005ED4F5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		8010D20525A2F034005ED4F5 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		8010D20A25A2F362005ED4F5 /* recipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipe.json; sourceTree = "<group>"; };
+		8010D20F25A2F3A8005ED4F5 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		8010D21425A2F5AA005ED4F5 /* RecipeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRowView.swift; sourceTree = "<group>"; };
+		8010D21925A2F6E6005ED4F5 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +163,9 @@
 			children = (
 				8010D19025A2DC19005ED4F5 /* ContentView.swift */,
 				8010D1F225A2E1F8005ED4F5 /* FoodRowView.swift */,
+				8010D21425A2F5AA005ED4F5 /* RecipeRowView.swift */,
 				8010D20525A2F034005ED4F5 /* FoodListView.swift */,
+				8010D21925A2F6E6005ED4F5 /* RecipeListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 			children = (
 				8010D1EA25A2E06F005ED4F5 /* Food.swift */,
 				8010D20025A2E3DE005ED4F5 /* ModelData.swift */,
+				8010D20F25A2F3A8005ED4F5 /* Recipe.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				8010D1F825A2E2B5005ED4F5 /* food.json */,
+				8010D20A25A2F362005ED4F5 /* recipe.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -291,6 +303,7 @@
 				8010D1F925A2E2B5005ED4F5 /* food.json in Resources */,
 				8010D19625A2DC1B005ED4F5 /* Preview Assets.xcassets in Resources */,
 				8010D19325A2DC1B005ED4F5 /* Assets.xcassets in Resources */,
+				8010D20B25A2F362005ED4F5 /* recipe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +332,11 @@
 				8010D19125A2DC19005ED4F5 /* ContentView.swift in Sources */,
 				8010D1EB25A2E06F005ED4F5 /* Food.swift in Sources */,
 				8010D18F25A2DC19005ED4F5 /* freezerApp.swift in Sources */,
+				8010D21A25A2F6E6005ED4F5 /* RecipeListView.swift in Sources */,
 				8010D20625A2F034005ED4F5 /* FoodListView.swift in Sources */,
+				8010D21525A2F5AA005ED4F5 /* RecipeRowView.swift in Sources */,
 				8010D19B25A2DC1B005ED4F5 /* freezer.xcdatamodeld in Sources */,
+				8010D21025A2F3A8005ED4F5 /* Recipe.swift in Sources */,
 				8010D1F325A2E1F8005ED4F5 /* FoodRowView.swift in Sources */,
 				8010D20125A2E3DE005ED4F5 /* ModelData.swift in Sources */,
 			);

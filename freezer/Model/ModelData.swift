@@ -10,6 +10,7 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var foods: [Food] = load("food.json")
+    @Published var recipes: [Recipe] = load("recipe.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
