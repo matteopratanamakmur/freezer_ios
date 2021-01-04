@@ -19,6 +19,7 @@
 		8010D1F325A2E1F8005ED4F5 /* FoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D1F225A2E1F8005ED4F5 /* FoodRowView.swift */; };
 		8010D1F925A2E2B5005ED4F5 /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = 8010D1F825A2E2B5005ED4F5 /* food.json */; };
 		8010D20125A2E3DE005ED4F5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D20025A2E3DE005ED4F5 /* ModelData.swift */; };
+		8010D20625A2F034005ED4F5 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8010D20525A2F034005ED4F5 /* FoodListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		8010D1F225A2E1F8005ED4F5 /* FoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRowView.swift; sourceTree = "<group>"; };
 		8010D1F825A2E2B5005ED4F5 /* food.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
 		8010D20025A2E3DE005ED4F5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		8010D20525A2F034005ED4F5 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				8010D19025A2DC19005ED4F5 /* ContentView.swift */,
 				8010D1F225A2E1F8005ED4F5 /* FoodRowView.swift */,
+				8010D20525A2F034005ED4F5 /* FoodListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				8010D19125A2DC19005ED4F5 /* ContentView.swift in Sources */,
 				8010D1EB25A2E06F005ED4F5 /* Food.swift in Sources */,
 				8010D18F25A2DC19005ED4F5 /* freezerApp.swift in Sources */,
+				8010D20625A2F034005ED4F5 /* FoodListView.swift in Sources */,
 				8010D19B25A2DC1B005ED4F5 /* freezer.xcdatamodeld in Sources */,
 				8010D1F325A2E1F8005ED4F5 /* FoodRowView.swift in Sources */,
 				8010D20125A2E3DE005ED4F5 /* ModelData.swift in Sources */,
