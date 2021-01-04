@@ -49,6 +49,7 @@
 		8010D1AC25A2DC1C005ED4F5 /* freezerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freezerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8010D1B025A2DC1C005ED4F5 /* freezerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = freezerUITests.swift; sourceTree = "<group>"; };
 		8010D1B225A2DC1C005ED4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8010D1E625A2DFF8005ED4F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		8010D18225A2DC19005ED4F5 = {
 			isa = PBXGroup;
 			children = (
+				8010D1E625A2DFF8005ED4F5 /* README.md */,
 				8010D18D25A2DC19005ED4F5 /* freezer */,
 				8010D1A425A2DC1C005ED4F5 /* freezerTests */,
 				8010D1AF25A2DC1C005ED4F5 /* freezerUITests */,
