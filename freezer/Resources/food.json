@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "carrot",
+        "imageName": "dummy"
+    },
+    {
+        "id": 2,
+        "name": "onion",
+        "imageName": "dummy"
+    },
+    {
+        "id": 3,
+        "name": "potatoes",
+        "imageName": "dummy"
+    }
+]
