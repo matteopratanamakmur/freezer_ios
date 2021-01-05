@@ -10,20 +10,24 @@ import CoreData
 
 struct ContentView: View {
     enum Tab {
-        case recipes
-        case foods
+        case recipe
+        case freezer
+        case food
     }
     
-    @State private var selection: Tab = .recipes
+    @State private var selection: Tab = .recipe
 
     var body: some View {
         TabView(selection: $selection) {
             RecipeListView().tabItem {
-                Text("Recipes")
-            }.tag(Tab.recipes)
+                Text("Recipe")
+            }.tag(Tab.recipe)
+            FreezerListView().tabItem {
+                Text("Freezer")
+            }.tag(Tab.freezer)
             FoodListView().tabItem {
-                Text("Foods")
-            }.tag(Tab.foods)
+                Text("Food")
+            }.tag(Tab.food)
         }
     }
 }
