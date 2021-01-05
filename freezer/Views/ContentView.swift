@@ -19,7 +19,7 @@ struct ContentView: View {
     @State private var selection: Tab = .recipes
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.create_time, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
 
@@ -35,7 +35,7 @@ struct ContentView: View {
 //        VStack {
 //            List {
 //                ForEach(items) { item in
-//                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//                    Text("Item at \(item.create_time!, formatter: itemFormatter)")
 //                }
 //                .onDelete(perform: deleteItems)
 //            }
@@ -54,7 +54,7 @@ struct ContentView: View {
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            newItem.create_time = Date()
 
             do {
                 try viewContext.save()
