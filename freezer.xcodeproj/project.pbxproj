@@ -27,6 +27,7 @@
 		8065106925A4247B00AA0828 /* Freezer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065106825A4247B00AA0828 /* Freezer.swift */; };
 		8065106E25A424DC00AA0828 /* FreezerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065106D25A424DC00AA0828 /* FreezerRowView.swift */; };
 		8065107325A42C5900AA0828 /* FreezerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065107225A42C5900AA0828 /* FreezerListView.swift */; };
+		8065107825A4349500AA0828 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065107725A4349500AA0828 /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		8065106825A4247B00AA0828 /* Freezer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freezer.swift; sourceTree = "<group>"; };
 		8065106D25A424DC00AA0828 /* FreezerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezerRowView.swift; sourceTree = "<group>"; };
 		8065107225A42C5900AA0828 /* FreezerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezerListView.swift; sourceTree = "<group>"; };
+		8065107725A4349500AA0828 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				8010D21925A2F6E6005ED4F5 /* RecipeListView.swift */,
 				8065106D25A424DC00AA0828 /* FreezerRowView.swift */,
 				8065107225A42C5900AA0828 /* FreezerListView.swift */,
+				8065107725A4349500AA0828 /* RecipeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8010D19825A2DC1B005ED4F5 /* Persistence.swift in Sources */,
+				8065107825A4349500AA0828 /* RecipeDetailView.swift in Sources */,
 				8010D19125A2DC19005ED4F5 /* ContentView.swift in Sources */,
 				8010D1EB25A2E06F005ED4F5 /* Food.swift in Sources */,
 				8010D18F25A2DC19005ED4F5 /* freezerApp.swift in Sources */,

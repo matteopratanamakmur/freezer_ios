@@ -11,10 +11,15 @@ struct RecipeListView: View {
     @EnvironmentObject var modelData: ModelData
 
     var body: some View {
-        List {
-            ForEach(modelData.recipes) { recipe in
-                RecipeRowView(recipe: recipe)
+        NavigationView {
+            List {
+                ForEach(modelData.recipes) { recipe in
+                    NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
+                        RecipeRowView(recipe: recipe)
+                    }
+                }
             }
+            .navigationTitle("Recipe")
         }
     }
 }
