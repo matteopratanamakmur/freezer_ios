@@ -16,9 +16,6 @@ struct FoodRowView: View {
                 .resizable()
                 .frame(width: 50, height: 50)
             Text(food.name)
-            Spacer()
-            // TODO 個数
-            Text("10")
         }
     }
 }

@@ -2,16 +2,19 @@
     {
         "id": 1,
         "name": "carrot",
+        "description": "Carrot is ...",
         "imageName": "dummy"
     },
     {
         "id": 2,
         "name": "onion",
+        "description": "Onion is ...",
         "imageName": "dummy"
     },
     {
         "id": 3,
         "name": "potatoes",
+        "description": "Potatoes is ...",
         "imageName": "dummy"
     }
 ]

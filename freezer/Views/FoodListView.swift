@@ -11,10 +11,15 @@ struct FoodListView: View {
     @EnvironmentObject var modelData: ModelData
 
     var body: some View {
-        List {
-            ForEach(modelData.foods) { food in
-                FoodRowView(food: food)
+        NavigationView {
+            List {
+                ForEach(modelData.foods) { food in
+                    NavigationLink(destination: FoodDetailView(food: food)) {
+                        FoodRowView(food: food)
+                    }
+                }
             }
+            .navigationTitle("Food")
         }
     }
 }
