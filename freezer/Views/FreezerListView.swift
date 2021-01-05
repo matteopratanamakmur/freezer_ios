@@ -16,12 +16,15 @@ struct FreezerListView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        VStack {
+        NavigationView {
             List {
                 ForEach(items) { item in
-                    FreezerRowView(item: item)
+                    NavigationLink(destination: FreezerDetailView(item: item)) {
+                        FreezerRowView(item: item)
+                    }
                 }
             }
+            .navigationTitle("Freezer")
         }
     }
 

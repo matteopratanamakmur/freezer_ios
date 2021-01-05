@@ -29,6 +29,7 @@
 		8065107325A42C5900AA0828 /* FreezerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065107225A42C5900AA0828 /* FreezerListView.swift */; };
 		8065107825A4349500AA0828 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065107725A4349500AA0828 /* RecipeDetailView.swift */; };
 		8065107D25A43A4B00AA0828 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065107C25A43A4B00AA0828 /* FoodDetailView.swift */; };
+		8065108A25A43C1000AA0828 /* FreezerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065108925A43C1000AA0828 /* FreezerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		8065107225A42C5900AA0828 /* FreezerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezerListView.swift; sourceTree = "<group>"; };
 		8065107725A4349500AA0828 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		8065107C25A43A4B00AA0828 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		8065108925A43C1000AA0828 /* FreezerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				8010D1F225A2E1F8005ED4F5 /* FoodRowView.swift */,
 				8010D21425A2F5AA005ED4F5 /* RecipeRowView.swift */,
 				8010D20525A2F034005ED4F5 /* FoodListView.swift */,
+				8065108925A43C1000AA0828 /* FreezerDetailView.swift */,
 				8065107C25A43A4B00AA0828 /* FoodDetailView.swift */,
 				8010D21925A2F6E6005ED4F5 /* RecipeListView.swift */,
 				8065106D25A424DC00AA0828 /* FreezerRowView.swift */,
@@ -347,6 +350,7 @@
 				8065107825A4349500AA0828 /* RecipeDetailView.swift in Sources */,
 				8010D19125A2DC19005ED4F5 /* ContentView.swift in Sources */,
 				8010D1EB25A2E06F005ED4F5 /* Food.swift in Sources */,
+				8065108A25A43C1000AA0828 /* FreezerDetailView.swift in Sources */,
 				8010D18F25A2DC19005ED4F5 /* freezerApp.swift in Sources */,
 				8065107D25A43A4B00AA0828 /* FoodDetailView.swift in Sources */,
 				8010D21A25A2F6E6005ED4F5 /* RecipeListView.swift in Sources */,
