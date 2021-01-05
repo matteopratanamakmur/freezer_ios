@@ -19,13 +19,7 @@ struct FreezerListView: View {
         VStack {
             List {
                 ForEach(items) { item in
-                    HStack {
-                        Text("\(item.id)")
-                        Text("\(item.food_id)")
-                        Text("\(item.num)")
-                        Text("\(item.create_time!, formatter: itemFormatter)")
-//                        Text("\(item.update_time!, formatter: itemFormatter)")
-                    }
+                    FreezerRowView(item: item)
                 }
             }
         }
