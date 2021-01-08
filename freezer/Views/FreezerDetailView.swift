@@ -25,13 +25,6 @@ struct FreezerDetailView: View {
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct FreezerDetailView_Previews: PreviewProvider {
     static var item = Item(context: PersistenceController.preview.container.viewContext)
 

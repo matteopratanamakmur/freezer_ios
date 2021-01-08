@@ -30,6 +30,7 @@
 		8065107825A4349500AA0828 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065107725A4349500AA0828 /* RecipeDetailView.swift */; };
 		8065107D25A43A4B00AA0828 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065107C25A43A4B00AA0828 /* FoodDetailView.swift */; };
 		8065108A25A43C1000AA0828 /* FreezerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8065108925A43C1000AA0828 /* FreezerDetailView.swift */; };
+		80F12DC325A91C24007B02F4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F12DC225A91C24007B02F4 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		8065107725A4349500AA0828 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		8065107C25A43A4B00AA0828 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 		8065108925A43C1000AA0828 /* FreezerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreezerDetailView.swift; sourceTree = "<group>"; };
+		80F12DC225A91C24007B02F4 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		8010D18D25A2DC19005ED4F5 /* freezer */ = {
 			isa = PBXGroup;
 			children = (
+				80F12DC125A91C10007B02F4 /* Utils */,
 				8010D1F725A2E291005ED4F5 /* Resources */,
 				8010D1E925A2E03E005ED4F5 /* Controller */,
 				8010D1E825A2E037005ED4F5 /* Model */,
@@ -213,6 +216,14 @@
 				8010D20A25A2F362005ED4F5 /* recipe.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		80F12DC125A91C10007B02F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				80F12DC225A91C24007B02F4 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +368,7 @@
 				8010D20625A2F034005ED4F5 /* FoodListView.swift in Sources */,
 				8065106E25A424DC00AA0828 /* FreezerRowView.swift in Sources */,
 				8010D21525A2F5AA005ED4F5 /* RecipeRowView.swift in Sources */,
+				80F12DC325A91C24007B02F4 /* Utils.swift in Sources */,
 				8010D19B25A2DC1B005ED4F5 /* freezer.xcdatamodeld in Sources */,
 				8010D21025A2F3A8005ED4F5 /* Recipe.swift in Sources */,
 				8065107325A42C5900AA0828 /* FreezerListView.swift in Sources */,
