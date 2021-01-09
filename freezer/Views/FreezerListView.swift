@@ -55,7 +55,10 @@ struct FreezerListView: View {
                         }
                     }
                     Button(action: {
-                        // 情報を登録
+                        if let index = items.firstIndex (where: {$0.food_id == Int64(selectedFoodId)}) {
+                            deleteItems(offsets: IndexSet([index]))
+                        }
+                        // 新規に情報を登録
                         addItem(foodId: Int64(selectedFoodId),
                                 num: Int64(selectedNum),
                                 limit: Int64(selectedLimit))
@@ -75,9 +78,8 @@ struct FreezerListView: View {
             newItem.food_id = foodId
             newItem.num = num
             newItem.limit = limit
-            // 作成時間 / 更新時間
+            // 作成時間
             newItem.create_time = Date()
-            newItem.update_time = Date()
 
             do {
                 try viewContext.save()

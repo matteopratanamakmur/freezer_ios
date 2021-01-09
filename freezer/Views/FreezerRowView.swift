@@ -16,14 +16,13 @@ struct FreezerRowView: View {
         HStack {
             let filteredFoods = modelData.foods.filter({$0.id == item.food_id})
             // TODO
-            // item.create_time / item.update_time が nil の場合には、
+            // item.create_time が nil の場合には、
             // itemFormatter で失敗する
             // Text("\(item.food_id)")
             Text("\(filteredFoods[0].name)")
             Text("\(item.num)")
             Text("\(item.limit)")
             Text("\(item.create_time!, formatter: itemFormatter)")
-//            Text("\(item.update_time!, formatter: itemFormatter)")
         }
     }
 }

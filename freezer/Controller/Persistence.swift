@@ -20,9 +20,8 @@ struct PersistenceController {
             newItem.num = Int64(index)
             newItem.limit = Int64(index * 2)
             newItem.food_id = Int64(index * 3)
-            // 作成時間 / 更新時間
+            // 作成時間
             newItem.create_time = Date()
-            newItem.update_time = Date()
         }
         do {
             try viewContext.save()
