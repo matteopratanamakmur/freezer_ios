@@ -37,7 +37,7 @@ struct FreezerListView: View {
                     // 食べ物選択
                     Picker(selection: $selectedFoodId, label: Text("食べ物")) {
                         ForEach(modelData.foods) { food in
-                            Text(food.name).tag(food.id)
+                            Text(food.name).tag(Int(food.id))
                         }
                     }
                     // 個数選択

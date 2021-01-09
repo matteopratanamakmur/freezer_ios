@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Food: Hashable, Codable, Identifiable {
-    var id: Int
+    var id: Int64
     var name: String
     var description: String
     private var imageName: String
