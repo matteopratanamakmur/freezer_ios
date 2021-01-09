@@ -16,9 +16,9 @@ struct FreezerDetailView: View {
             // TODO
             // item.create_time / item.update_time が nil の場合には、
             // itemFormatter で失敗する
-            Text("\(item.id)")
             Text("\(item.food_id)")
             Text("\(item.num)")
+            Text("\(item.limit)")
             Text("\(item.create_time!, formatter: itemFormatter)")
 //            Text("\(item.update_time!, formatter: itemFormatter)")
         }

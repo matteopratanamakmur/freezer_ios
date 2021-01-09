@@ -13,9 +13,16 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
+        // debug 用のデータ
+        for index in 0..<10 {
             let newItem = Item(context: viewContext)
+            // 個数 / 期限 / food_id
+            newItem.num = Int64(index)
+            newItem.limit = Int64(index * 2)
+            newItem.food_id = Int64(index * 3)
+            // 作成時間 / 更新時間
             newItem.create_time = Date()
+            newItem.update_time = Date()
         }
         do {
             try viewContext.save()
