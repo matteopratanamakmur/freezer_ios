@@ -24,6 +24,7 @@ struct FreezerListView: View {
     var body: some View {
         NavigationView {
             VStack{
+                // 冷蔵庫の中
                 List {
                     ForEach(items) { item in
                         NavigationLink(destination: FreezerDetailView(item: item)) {
@@ -33,6 +34,7 @@ struct FreezerListView: View {
                     // データ削除操作時に呼び出すメソッドを追加
                     .onDelete(perform: deleteItems)
                 }
+                // 冷蔵庫に追加
                 Form {
                     // 食べ物選択
                     Picker(selection: $selectedFoodId, label: Text("食べ物")) {
@@ -62,7 +64,7 @@ struct FreezerListView: View {
                     }
                 }
             }
-            .navigationTitle("Freezer")
+            .navigationTitle("冷蔵庫")
         }
     }
 

@@ -19,7 +19,7 @@ struct FoodListView: View {
                     }
                 }
             }
-            .navigationTitle("Food")
+            .navigationTitle("食べ物")
         }
     }
 }
